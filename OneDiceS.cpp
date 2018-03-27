@@ -61,17 +61,22 @@ void Dice::roll(int times)
     cout << setprecision(8) << "\nmean: " << mean << ", variance: " << var << ", standard deviation: " << SD << endl;
 
     cout << "\n**** Check by theoretical prediction ****" << endl; 
-    mean = 0.0, var = 0.0, SD = 0.0;
+    double mean_err = 0.0, var_err = 0.0, SD_err = 0.0;
     for (int i=0; i<histogram.size(); i++)
     {
-        mean += (i + 1) * (double)1.0/sides;
-        var +=  pow((i + 1), 2) * (double)1.0/sides;
+        mean_err += (i + 1) * (double)1.0/sides;
+        var_err +=  pow((i + 1), 2) * (double)1.0/sides;
     }
-    var = var - pow(mean, 2);
-    SD = sqrt(var);
+    var_err = var_err - pow(mean, 2);
+    SD_err = sqrt(var_err);
 
-    cout << setprecision(8) << "\nmean: " << mean << ", variance: " << var << ", standard deviation: " << SD << endl;
+    cout << setprecision(8) << "\nmean: " << mean_err << ", variance: " << var_err << ", standard deviation: " << SD_err << endl;
 
+    cout << "\n**** Check error ****" << endl; 
+    mean_err = (mean_err - mean) / mean_err * 100;
+    var_err = (var_err - var) / var_err * 100;
+    SD_err = (SD_err - SD) / SD_err * 100;
+    cout << setprecision(8) << "\nmean error: " << mean_err << "%, variance error: " << var_err << "%, standard deviation error: " << SD_err << "%." <<endl;
 
     end = time(NULL);
     cout << setprecision(16) << "\n\nNumber of trials: " << times << ", and time spent: " << end-start << " sec" << endl; 
