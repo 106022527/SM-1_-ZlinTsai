@@ -1,13 +1,14 @@
-## Name: Zheng-Lin Tsai      ID: s106022501
-
 # StatMech Assignment 1
+
+## Name: Zheng-Lin Tsai             &ensp; ID: s106022501
 
 ## Problem 0: One die with 6 sides
 
 1. my code: [OneDice.cpp](OneDice.cpp)
 
-2. and 3.
-sides         N_s       N_s-N/6        N_s/N    N_s/N-1/6
+2. and 3. 
+
+sides      <br><br> N_s     N_s-N/6      N_s/N     N_s/N-1/6
 
     1           0        1.6667     0.000000     0.166667
     2           3        1.3333     0.300000     0.133333
@@ -197,7 +198,8 @@ mean error: 0.013286667%, variance error: 0.10166533%, standard deviation error:
 
 
 Number of trials: 10000000, and time spent: 0 sec
-----------------------------------------------------------------------------
+
+
 sides         N_s       N_s-N/S        N_s/N    N_s/N-1/S
 
     1     1429769     1197.5714     0.142977     0.000120
