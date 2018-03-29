@@ -104,4 +104,4 @@
 
     Number of trials: 10000000, and time spent: 0 sec
 
-4. At 10000000 trials, I got mean error: 0.011571111%, variance error: 0.10674853%, standard deviation error: 0.053388516%.
+4. At 10000 trials, I got mean error: 0.052666667%, standard deviation error: 0.062527559%.
