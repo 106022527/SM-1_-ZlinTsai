@@ -105,3 +105,11 @@
     Number of trials: 10000000, and time spent: 0 sec
 
 4. At 10000 trials, I got mean error: 0.052666667%, standard deviation error: 0.062527559%.
+
+   But, this case (10000 trials) the result can less than 1%. Next time maybe cannot less than 1%.
+   Then I try to do 1000 times 2000 trials, and get more general error.
+   
+   data : 
+   
+   mean error: 0.0106%, standard deviation error: -0.26545938%.
+   
