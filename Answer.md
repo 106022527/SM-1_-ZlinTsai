@@ -113,3 +113,5 @@
    
    mean error: 0.0106%, standard deviation error: -0.26545938%.
    
+   So, data of 2000 trials, the error can less than 1%
+   
